@@ -2,7 +2,7 @@
 
 # SRM CuriousBees
 
-<img src="./docs/assets/hero-banner.png" alt="SRM CuriousBees Hero Banner" width="100%" />
+<img src="./docs/assets/hero-banner-v2.png" alt="SRM CuriousBees Hero Banner" width="100%" />
 
 ### Research Collaboration & Supervisor-Scholar Management Platform
 
