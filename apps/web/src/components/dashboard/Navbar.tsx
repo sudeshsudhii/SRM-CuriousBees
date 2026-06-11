@@ -53,7 +53,7 @@ export default function Navbar() {
   // Generate dynamic breadcrumbs
   const getBreadcrumbs = () => {
     const segments = pathname.split('/').filter(Boolean);
-    const breadcrumbs = [{ name: 'CuriousBees', href: '/dashboard' }];
+    const breadcrumbs = [{ name: 'SRM Curiousbees', href: '/dashboard' }];
 
     let currentHref = '';
     segments.forEach((segment, index) => {

@@ -3,25 +3,25 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15-alpine
-    container_name: srm_curiousbees_postgres_dev
+    container_name: srm_srm-curiousbees_postgres_dev
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: srm_curiousbees_db
+      POSTGRES_DB: srm_srm-curiousbees_db
     ports:
       - "5432:5432"
     volumes:
       - postgres_data_dev:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d srm_curiousbees_db"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d srm_srm-curiousbees_db"]
       interval: 5s
       timeout: 5s
       retries: 5
 
   redis:
     image: redis:7-alpine
-    container_name: srm_curiousbees_redis_dev
+    container_name: srm_srm-curiousbees_redis_dev
     restart: always
     ports:
       - "6379:6379"
@@ -33,7 +33,7 @@ services:
 
   api:
     image: node:22-alpine
-    container_name: srm_curiousbees_api_dev
+    container_name: srm_srm-curiousbees_api_dev
     working_dir: /app
     command: sh -c "npm install --legacy-peer-deps && npm run db:generate && npm run dev:api"
     ports:
@@ -41,8 +41,8 @@ services:
     environment:
       NODE_ENV: development
       PORT: 4000
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/srm_curiousbees_db?schema=public
-      DIRECT_URL: postgresql://postgres:postgres@postgres:5432/srm_curiousbees_db?schema=public
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/srm_srm-curiousbees_db?schema=public
+      DIRECT_URL: postgresql://postgres:postgres@postgres:5432/srm_srm-curiousbees_db?schema=public
       REDIS_HOST: redis
       REDIS_PORT: 6379
       DEVELOPMENT_MODE: "true"
@@ -60,7 +60,7 @@ services:
 
   web:
     image: node:22-alpine
-    container_name: srm_curiousbees_web_dev
+    container_name: srm_srm-curiousbees_web_dev
     working_dir: /app
     command: sh -c "npm install --legacy-peer-deps && npm run dev:web"
     ports:

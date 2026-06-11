@@ -32,7 +32,7 @@ export default function ResearchStats() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12 text-center max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Trusted by SRM University Research Scholars</h2>
-          <p className="text-slate-500">CuriousBees powers interdisciplinary research across all major campuses, facilitating thousands of collaborations daily.</p>
+          <p className="text-slate-500">SRM Curiousbees powers interdisciplinary research across all major campuses, facilitating thousands of collaborations daily.</p>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">

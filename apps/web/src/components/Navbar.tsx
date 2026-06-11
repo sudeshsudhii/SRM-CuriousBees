@@ -13,7 +13,7 @@ import SpotlightSearch from './SpotlightSearch';
 import { cn } from '@/lib/utils';
 import { ROLE_LABELS } from '@/lib/auth/role-mapping';
 import { RoleBadge } from './shared/role-badge';
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 
 

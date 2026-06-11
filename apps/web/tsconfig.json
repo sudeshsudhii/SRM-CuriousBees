@@ -27,16 +27,16 @@
       "@/*": [
         "./src/*"
       ],
-      "@curiousbees/constants": [
+      "@srm-curiousbees/constants": [
         "../../packages/constants/src"
       ],
-      "@curiousbees/types": [
+      "@srm-curiousbees/types": [
         "../../packages/types"
       ],
-      "@curiousbees/shared-utils": [
+      "@srm-curiousbees/shared-utils": [
         "../../packages/shared-utils"
       ],
-      "@curiousbees/ui": [
+      "@srm-curiousbees/ui": [
         "../../packages/ui/src"
       ]
     }

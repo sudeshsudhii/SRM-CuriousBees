@@ -1,12 +1,12 @@
-# CuriousBees V2 — Test & Production Deployment Guide
+# SRM Curiousbees — Test & Production Deployment Guide
 
-This guide details the procedures, checklists, environmental configurations, and rollback strategies required to deploy **CuriousBees V2** to test (staging) and production environments.
+This guide details the procedures, checklists, environmental configurations, and rollback strategies required to deploy **SRM Curiousbees** to test (staging) and production environments.
 
 ---
 
 ## 🏗️ Architecture Overview
 
-A production-ready deployment of CuriousBees V2 contains the following components:
+A production-ready deployment of SRM Curiousbees contains the following components:
 1. **Next.js Frontend (`apps/web`)**: Deployed to a serverless platform (e.g., Vercel, AWS Amplify, Netlify) or containerized with Docker.
 2. **NestJS API Backend (`apps/api`)**: Deployed to a containerized platform (e.g., AWS ECS, GCP Cloud Run, Heroku, Render) or a VM (e.g., AWS EC2, DigitalOcean Droplet).
 3. **Database (PostgreSQL)**: Deployed to a managed database instance (e.g., Supabase PostgreSQL, AWS RDS, GCP Cloud SQL).
@@ -53,24 +53,24 @@ Ensure that `DEVELOPMENT_MODE` / `NEXT_PUBLIC_DEVELOPMENT_MODE` is set to **`fal
 | `REDIS_HOST` | Host address of Redis queue. | `your-redis-instance.upstash.io` |
 | `REDIS_PORT` | Port of Redis queue. | `6379` |
 | `REDIS_PASSWORD` | Password for Redis server (highly recommended). | `secure_redis_pass_here` |
-| `FRONTEND_URL` | Main Next.js frontend URL (sets cookie & CORS context). | `https://curiousbees.yourdomain.com` |
-| `ALLOWED_ORIGINS` | Comma-separated list of allowed CORS domains. | `https://curiousbees.yourdomain.com` |
-| `FIREBASE_PROJECT_ID` | Project ID from Firebase service account credentials. | `curiousbees-prod-12345` |
-| `FIREBASE_CLIENT_EMAIL` | Client email from Firebase service account credentials. | `firebase-adminsdk@curiousbees-prod.iam...` |
+| `FRONTEND_URL` | Main Next.js frontend URL (sets cookie & CORS context). | `https://srm-curiousbees.yourdomain.com` |
+| `ALLOWED_ORIGINS` | Comma-separated list of allowed CORS domains. | `https://srm-curiousbees.yourdomain.com` |
+| `FIREBASE_PROJECT_ID` | Project ID from Firebase service account credentials. | `srm-curiousbees-prod-12345` |
+| `FIREBASE_CLIENT_EMAIL` | Client email from Firebase service account credentials. | `firebase-adminsdk@srm-curiousbees-prod.iam...` |
 | `FIREBASE_PRIVATE_KEY` | Private key string with escaped `\n` characters. | `"-----BEGIN PRIVATE KEY-----\nMIIEv...-----END PRIVATE KEY-----\n"` |
 
 ### 2. Next.js Frontend Variables
 
 | Variable | Description | Example / Recommended Value |
 | :--- | :--- | :--- |
-| `NEXT_PUBLIC_API_URL` | Fully qualified URL of the running API gateway. | `https://api.curiousbees.yourdomain.com` |
+| `NEXT_PUBLIC_API_URL` | Fully qualified URL of the running API gateway. | `https://api.srm-curiousbees.yourdomain.com` |
 | `NEXT_PUBLIC_DEVELOPMENT_MODE` | **MUST BE FALSE** to require Firebase sign-in. | `false` |
 | `NEXT_PUBLIC_SUPABASE_URL` | Public API URL for Supabase client queries. | `https://your-project.supabase.co` |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Anonymous public key for database interaction. | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...` |
 | `NEXT_PUBLIC_FIREBASE_API_KEY` | Web API key from Firebase settings. | `AIzaSyA1B2C3D4...` |
-| `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | Auth domain for Firebase Client. | `curiousbees-prod.firebaseapp.com` |
-| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Project ID matching backend. | `curiousbees-prod-12345` |
-| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Default storage bucket. | `curiousbees-prod.appspot.com` |
+| `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | Auth domain for Firebase Client. | `srm-curiousbees-prod.firebaseapp.com` |
+| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Project ID matching backend. | `srm-curiousbees-prod-12345` |
+| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Default storage bucket. | `srm-curiousbees-prod.appspot.com` |
 | `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER` | FCM Sender ID. | `123456789012` |
 | `NEXT_PUBLIC_FIREBASE_APP_ID` | App ID from Firebase settings. | `1:12345:web:abcd` |
 | `NEXT_PUBLIC_FIREBASE_VAPID_KEY` | Public key to sign push notifications. | `B...` |
@@ -79,7 +79,7 @@ Ensure that `DEVELOPMENT_MODE` / `NEXT_PUBLIC_DEVELOPMENT_MODE` is set to **`fal
 
 ## 🚀 Deployment Steps
 
-Follow these steps to deploy CuriousBees V2:
+Follow these steps to deploy SRM Curiousbees:
 
 ### Step 1: Database Migration
 Before starting the API backend, apply database migrations using the direct database URL. In CI/CD pipelines, this can be run in the root workspace:

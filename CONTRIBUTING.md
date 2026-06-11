@@ -1,6 +1,6 @@
-# Contributing to CuriousBees
+# Contributing to SRM Curiousbees
 
-We welcome contributions to CuriousBees! This guide outlines our branching strategies, commit message standards, code review workflows, and code quality expectations.
+We welcome contributions to SRM Curiousbees! This guide outlines our branching strategies, commit message standards, code review workflows, and code quality expectations.
 
 ---
 
@@ -55,7 +55,7 @@ We adhere to the [Conventional Commits](https://www.conventionalcommits.org/en/v
 
 ## 4. Development Standards
 
-To keep the CuriousBees codebase clean and maintainable, adhere to these guidelines:
+To keep the SRM Curiousbees codebase clean and maintainable, adhere to these guidelines:
 * **TypeScript Strictness**: Avoid using the `any` type. Explicitly define return types for all public class methods and API requests.
 * **Linter Warnings**: Do not commit code containing active ESLint warnings or TypeScript errors.
 * **State Operations**: Prefer asynchronous operations (`async/await`) over promise-chaining (`.then()`).

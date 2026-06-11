@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Propose a new feature, module, or enhancement for CuriousBees V2
+about: Propose a new feature, module, or enhancement for SRM Curiousbees
 title: 'feat(scope): [brief description of enhancement]'
 labels: enhancement, planning
 assignees: ''

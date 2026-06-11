@@ -1,19 +1,19 @@
-# CuriousBees V2 — Deployment & Cross-Platform Orchestration Guide
+# SRM Curiousbees — Deployment & Cross-Platform Orchestration Guide
 
-This guide describes how to run CuriousBees V2 on multiple developer OS platforms (Windows, macOS, Linux) and deploy to cloud production environments.
+This guide describes how to run SRM Curiousbees on multiple developer OS platforms (Windows, macOS, Linux) and deploy to cloud production environments.
 
 ---
 
 ## 💻 1. Cross-Platform Local Setup (macOS / Windows / Linux)
 
-CuriousBees is built using npm workspaces. Ensure you have **Node.js >= 22** and **npm >= 10** installed.
+SRM Curiousbees is built using npm workspaces. Ensure you have **Node.js >= 22** and **npm >= 10** installed.
 
 ### Git Checkout & Clean Setup
 
 ```bash
 # 1. Clone the project
-git clone <curiousbees-repo-url>
-cd CuriousBees_V2
+git clone <srm-curiousbees-repo-url>
+cd SRM_Curiousbees
 
 # 2. Reset the workspace (Prunes stale nodes, runs clean install, runs DB setups)
 npm run reset
@@ -50,7 +50,7 @@ npm run dev:api
 
 ## 🐳 2. Running in Docker Containers
 
-CuriousBees V2 provides containerized configurations for development and production.
+SRM Curiousbees provides containerized configurations for development and production.
 
 ### Development Mode (with code hot-reloading)
 
@@ -72,7 +72,7 @@ docker compose -f docker-compose.yml up --build
 
 ## ☁️ 3. Cloud Production Deployments
 
-CuriousBees V2 can be deployed to serverless frontends and server backends with 100% free/open-source tiers.
+SRM Curiousbees can be deployed to serverless frontends and server backends with 100% free/open-source tiers.
 
 ### A. Database Deployment (Supabase PostgreSQL)
 

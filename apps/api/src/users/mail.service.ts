@@ -9,7 +9,7 @@ import { Injectable, Logger } from '@nestjs/common';
 export class MailService {
   private readonly logger = new Logger(MailService.name);
   private readonly apiKey = process.env.RESEND_API_KEY;
-  private readonly fromAddress = 'CuriousBees <notifications@curiousbees.srmist.edu.in>';
+  private readonly fromAddress = 'SRM Curiousbees <notifications@srm-curiousbees.srmist.edu.in>';
   private readonly adminEmail =
     process.env.MAIN_ADMIN_EMAIL || 'mr9820@srmist.edu.in';
 
@@ -48,7 +48,7 @@ export class MailService {
                 <tr>
                   <td>
                     <div style="display:inline-flex;align-items:center;gap:10px;">
-                      <span style="font-size:22px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">🐝 CuriousBees</span>
+                      <span style="font-size:22px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">🐝 SRM Curiousbees</span>
                     </div>
                     <p style="margin:6px 0 0;color:rgba(255,255,255,0.7);font-size:13px;font-weight:500;">SRMIST Research Collaboration Platform</p>
                   </td>
@@ -62,7 +62,7 @@ export class MailService {
             <td style="padding:36px 40px 28px;">
               <h2 style="margin:0 0 6px;font-size:20px;font-weight:700;color:#111827;">New Supervisor Request</h2>
               <p style="margin:0 0 24px;font-size:14px;color:#6b7280;line-height:1.6;">
-                A faculty member has submitted a registration request to join CuriousBees as a <strong>Research Supervisor</strong>. Please review and approve or reject their application from the admin dashboard.
+                A faculty member has submitted a registration request to join SRM Curiousbees as a <strong>Research Supervisor</strong>. Please review and approve or reject their application from the admin dashboard.
               </p>
 
               <!-- Info Card -->
@@ -117,7 +117,7 @@ export class MailService {
           <tr>
             <td style="padding:20px 40px;border-top:1px solid #f1f5f9;text-align:center;">
               <p style="margin:0;font-size:11px;color:#9ca3af;">
-                This is an automated message from the CuriousBees platform. Do not reply.<br/>
+                This is an automated message from the SRM Curiousbees platform. Do not reply.<br/>
                 SRMIST • Institutional Research Portal
               </p>
             </td>
@@ -139,7 +139,7 @@ export class MailService {
         body: JSON.stringify({
           from: this.fromAddress,
           to: [this.adminEmail],
-          subject: `[CuriousBees] New Supervisor Request — ${supervisor.name}`,
+          subject: `[SRM Curiousbees] New Supervisor Request — ${supervisor.name}`,
           html,
         }),
       });

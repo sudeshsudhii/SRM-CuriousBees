@@ -1,12 +1,12 @@
-# CuriousBees Architecture Guide
+# SRM Curiousbees Architecture Guide
 
-This document provides a comprehensive technical overview of the **CuriousBees V2** platform architecture.
+This document provides a comprehensive technical overview of the **SRM Curiousbees** platform architecture.
 
 ---
 
 ## 1. System Topology
 
-CuriousBees utilizes a decoupled, strictly typed client-server architecture. The frontend application handles presentation, client state, and route-level protection, while the backend API handles database transactions, authorization checks, and background messaging queues.
+SRM Curiousbees utilizes a decoupled, strictly typed client-server architecture. The frontend application handles presentation, client state, and route-level protection, while the backend API handles database transactions, authorization checks, and background messaging queues.
 
 ```mermaid
 flowchart TD
@@ -59,7 +59,7 @@ flowchart TD
 
 ## 4. Database Schema (`apps/api/prisma`)
 
-CuriousBees runs PostgreSQL managed via Prisma ORM.
+SRM Curiousbees runs PostgreSQL managed via Prisma ORM.
 
 ### Key Database Relationships
 * **`User`**: Identifies researchers, guides, and admins. Stores profiles, supervisor references, and approval flags.

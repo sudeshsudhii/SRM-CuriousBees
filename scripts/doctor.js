@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-console.log('🩺 Running CuriousBees V2 Doctor Diagnostics...\n');
+console.log('🩺 Running SRM Curiousbees Doctor Diagnostics...\n');
 
 const rootDir = path.resolve(__dirname, '..');
 const envPath = path.join(rootDir, '.env');
@@ -153,9 +153,9 @@ if (hasDb) {
 // 4. Check Shared Package Builds
 console.log(`\n${colors.bold}4. Shared Package Build Validation:${colors.reset}`);
 const packagesToCheck = [
-  { name: '@curiousbees/types', path: 'packages/types/dist/index.js' },
-  { name: '@curiousbees/shared-utils', path: 'packages/shared-utils/dist/index.js' },
-  { name: '@curiousbees/constants', path: 'packages/constants/dist/index.js' }
+  { name: '@srm-curiousbees/types', path: 'packages/types/dist/index.js' },
+  { name: '@srm-curiousbees/shared-utils', path: 'packages/shared-utils/dist/index.js' },
+  { name: '@srm-curiousbees/constants', path: 'packages/constants/dist/index.js' }
 ];
 
 packagesToCheck.forEach((pkg) => {

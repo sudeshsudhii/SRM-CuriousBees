@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 const ROLE_LABELS: Record<UserRole, string> = {
   RESEARCH_SUPERVISOR:   'Supervisor',

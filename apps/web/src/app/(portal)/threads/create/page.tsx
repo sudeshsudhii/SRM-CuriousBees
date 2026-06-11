@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useStore } from '@/store/useStore';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { CreateThreadSchema } from '@curiousbees/shared-utils';
+import { CreateThreadSchema } from '@srm-curiousbees/shared-utils';
 import { 
   FileText, 
   Eye, 

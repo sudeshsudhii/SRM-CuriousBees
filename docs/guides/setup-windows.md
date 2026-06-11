@@ -1,6 +1,6 @@
 # Windows Local Setup Guide
 
-Follow this guide to configure and run the CuriousBees V2 project on Windows.
+Follow this guide to configure and run the SRM Curiousbees project on Windows.
 
 ---
 
@@ -20,7 +20,7 @@ Ensure you have the following installed:
 Open **PowerShell** or **Command Prompt** (cmd) and run:
 ```powershell
 git clone <repository-url>
-cd CuriousBees_V2
+cd SRM_Curiousbees
 npm install
 ```
 

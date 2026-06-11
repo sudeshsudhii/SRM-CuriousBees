@@ -117,7 +117,7 @@ export default function SignInPage() {
                   <ShieldCheck className="w-5 h-5 text-[#FFC828]" />
                 </div>
                 <div>
-                  <span className="font-display font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">CuriousBees</span>
+                  <span className="font-display font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">SRM Curiousbees</span>
                   <p className="text-[10px] text-white/50 tracking-wider uppercase font-semibold">SRMIST Research Portal</p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function SignInPage() {
             {/* Middle visual showcase (floating premium nodes) */}
             <div className="relative z-10 my-8 flex items-center justify-center h-48">
               <div className="relative w-40 h-40">
-                {/* Center Node (CuriousBees Brand Icon) */}
+                {/* Center Node (SRM Curiousbees Brand Icon) */}
                 <motion.div
                   animate={{ y: [0, -6, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}

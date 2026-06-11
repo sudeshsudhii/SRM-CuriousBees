@@ -66,6 +66,12 @@ const coreMiddleware = clerkMiddleware(async (auth, request) => {
 // 3. Export a resilient Edge wrapper around clerkMiddleware
 export default async function middleware(request: NextRequest, event: NextFetchEvent) {
   try {
+    // Development mode bypass — skip Clerk entirely when no valid keys are configured
+    if (process.env.NEXT_PUBLIC_DEVELOPMENT_MODE === 'true') {
+      console.log(`[MIDDLEWARE DEV] Bypassing Clerk auth for: ${request.nextUrl.pathname}`);
+      return NextResponse.next();
+    }
+
     // Graceful configuration check
     if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || !process.env.CLERK_SECRET_KEY) {
       console.error("[MIDDLEWARE FATAL] Missing Clerk environment variables (NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY or CLERK_SECRET_KEY).");

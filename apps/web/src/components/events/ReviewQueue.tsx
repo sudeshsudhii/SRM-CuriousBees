@@ -5,7 +5,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { apiFetch } from '@/lib/api-client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, Check, CheckCircle, X, Calendar, MapPin, Loader2 } from 'lucide-react';
-import { Event } from '@curiousbees/types';
+import { Event } from '@srm-curiousbees/types';
 
 type PrismaEvent = Event & {
   status: 'DRAFT' | 'PUBLISHED' | 'REVIEW_REQUIRED' | 'FAILED';

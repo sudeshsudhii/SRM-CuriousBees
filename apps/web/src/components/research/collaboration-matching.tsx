@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Network, UserPlus } from 'lucide-react';
-import { User } from '@curiousbees/types';
+import { User } from '@srm-curiousbees/types';
 import { motion } from 'framer-motion';
 
 interface CollaborationMatchingProps {

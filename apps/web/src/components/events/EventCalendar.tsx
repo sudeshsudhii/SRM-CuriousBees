@@ -8,7 +8,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import listPlugin from '@fullcalendar/list';
 import { useQuery } from '@tanstack/react-query';
 import { apiFetch } from '@/lib/api-client';
-import { Event } from '@curiousbees/types';
+import { Event } from '@srm-curiousbees/types';
 
 type PrismaEvent = Event & {
   status: 'DRAFT' | 'PUBLISHED' | 'REVIEW_REQUIRED' | 'FAILED';

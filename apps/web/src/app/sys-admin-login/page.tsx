@@ -117,7 +117,7 @@ export default function AdminLoginPage() {
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/25">
               <ShieldCheck className="w-5 h-5 text-white" />
             </div>
-            <span className="text-white font-bold text-lg tracking-tight">CuriousBees</span>
+            <span className="text-white font-bold text-lg tracking-tight">SRM Curiousbees</span>
           </div>
           <p className="text-white/40 text-xs font-medium tracking-wider uppercase">Institute Admin Portal</p>
         </motion.div>

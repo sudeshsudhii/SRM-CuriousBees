@@ -1,12 +1,12 @@
 {
-  "name": "curiousbees-monorepo",
+  "name": "srm-curiousbees-monorepo",
   "version": "1.0.0",
   "private": true,
   "engines": {
     "node": ">=22"
   },
   "packageManager": "npm@10.8.2",
-  "description": "CuriousBees — AI-powered Academic Collaboration Platform",
+  "description": "SRM Curiousbees — AI-powered Academic Collaboration Platform",
   "workspaces": [
     "packages/*",
     "apps/*"

@@ -160,7 +160,7 @@ export function SearchCommand({ isOpen, onClose }: SearchCommandProps) {
               <input
                 ref={inputRef}
                 type="text"
-                placeholder="Search across CuriousBees ecosystem..."
+                placeholder="Search across SRM Curiousbees ecosystem..."
                 value={query}
                 onChange={(e) => {
                   setQuery(e.target.value);
@@ -256,7 +256,7 @@ export function SearchCommand({ isOpen, onClose }: SearchCommandProps) {
                   <span className="font-sans font-normal text-[14px]">⏎</span> select
                 </span>
               </div>
-              <span className="opacity-70">CuriousBees Dashboard</span>
+              <span className="opacity-70">SRM Curiousbees Dashboard</span>
             </div>
           </motion.div>
         </div>

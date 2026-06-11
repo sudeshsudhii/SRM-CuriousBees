@@ -9,9 +9,9 @@ export class AppController {
   @Get(['', 'api'])
   healthCheck() {
     return {
-      message: 'Welcome to CuriousBees API',
+      message: 'Welcome to SRM Curiousbees API',
       status: 'ok',
-      service: 'CuriousBees API',
+      service: 'SRM Curiousbees API',
       version: '1.0.0',
       timestamp: new Date().toISOString(),
       docs: '/api/docs',

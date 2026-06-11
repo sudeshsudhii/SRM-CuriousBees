@@ -35,7 +35,7 @@ export default function HeroSection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          CuriousBees 2.0 is now available
+          SRM Curiousbees 2.0 is now available
         </motion.div>
 
         {/* Headline */}
@@ -107,7 +107,7 @@ export default function HeroSection() {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="bg-slate-100/50 px-32 py-1 rounded-md text-[10px] text-slate-400 font-medium">
-                research.curiousbees.edu
+                research.srm-curiousbees.edu
               </div>
             </div>
           </div>

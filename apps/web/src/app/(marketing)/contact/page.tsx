@@ -71,7 +71,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-bold text-slate-900">Email Support</h4>
                       <p className="text-sm text-slate-500 mb-1">Our team typically responds within 24 hours.</p>
-                      <a href="mailto:support@curiousbees.edu" className="text-primary hover:underline font-medium text-sm">support@curiousbees.edu</a>
+                      <a href="mailto:support@srm-curiousbees.edu" className="text-primary hover:underline font-medium text-sm">support@srm-curiousbees.edu</a>
                     </div>
                   </div>
                   

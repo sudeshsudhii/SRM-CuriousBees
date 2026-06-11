@@ -7,7 +7,7 @@ import { Quote } from 'lucide-react';
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "CuriousBees transformed how our department manages interdisciplinary projects. The visibility into scholar progress is unprecedented.",
+      quote: "SRM Curiousbees transformed how our department manages interdisciplinary projects. The visibility into scholar progress is unprecedented.",
       author: "Dr. Ananya Sharma",
       title: "Head of Research, Computer Science",
       initials: "AS",

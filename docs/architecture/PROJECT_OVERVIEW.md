@@ -1,6 +1,6 @@
-# CuriousBees V2 — Project Overview
+# SRM Curiousbees — Project Overview
 
-CuriousBees is a centralized, digital Research Collaboration Platform designed specifically for modern university ecosystems. It replaces fragmented communication channels (such as emails, external chats, and shared drives) with a unified environment dedicated to academic supervision, project tracking, and research discovery.
+SRM Curiousbees is a centralized, digital Research Collaboration Platform designed specifically for modern university ecosystems. It replaces fragmented communication channels (such as emails, external chats, and shared drives) with a unified environment dedicated to academic supervision, project tracking, and research discovery.
 
 ---
 

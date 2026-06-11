@@ -1,6 +1,6 @@
 # Railway Production Deployment Guide
 
-This document describes how to prepare and deploy the CuriousBees NestJS backend (`apps/api`) to Railway.
+This document describes how to prepare and deploy the SRM Curiousbees NestJS backend (`apps/api`) to Railway.
 
 ## Environment Variables
 
@@ -13,8 +13,8 @@ These variables must be set for the application to boot successfully:
 * `DIRECT_URL`: Direct connection string to Supabase PostgreSQL (used by Prisma for migrations).
 * `CLERK_SECRET_KEY`: Private key for authentication middleware, provided by Clerk.
 * `SUPABASE_SERVICE_ROLE_KEY`: Service role API key for Supabase, used for backend service actions.
-* `FRONTEND_URL`: Absolute URL of the frontend application (e.g. `https://curiousbees.vercel.app`).
-* `ALLOWED_ORIGINS`: Comma-separated list of origins permitted to cross-origin resource share (e.g., `https://curiousbees.vercel.app,https://www.curiousbees.vercel.app`).
+* `FRONTEND_URL`: Absolute URL of the frontend application (e.g. `https://srm-curiousbees.vercel.app`).
+* `ALLOWED_ORIGINS`: Comma-separated list of origins permitted to cross-origin resource share (e.g., `https://srm-curiousbees.vercel.app,https://www.srm-curiousbees.vercel.app`).
 
 ### Optional Variables
 These variables enable additional integrations but will not prevent startup if omitted:

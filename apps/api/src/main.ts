@@ -12,10 +12,10 @@ const envCandidates = [
 const envPath = envCandidates.find((candidate) => fs.existsSync(candidate));
 if (envPath) {
   dotenv.config({ path: envPath });
-  console.log(`[CuriousBees] Loaded root environment from ${envPath}`);
+  console.log(`[SRM Curiousbees] Loaded root environment from ${envPath}`);
 } else {
   dotenv.config();
-  console.warn('[CuriousBees] No root .env file found.');
+  console.warn('[SRM Curiousbees] No root .env file found.');
 }
 
 // Startup Validation Layer - Non-fatal warnings to avoid boot crashes on Railway
@@ -75,15 +75,14 @@ async function createApp(expressInstance?: express.Express) {
       { path: 'api', method: RequestMethod.GET },
       { path: 'health', method: RequestMethod.GET },
       { path: 'api/health', method: RequestMethod.GET },
-      { path: 'api/system', method: RequestMethod.GET },
       { path: 'api/version', method: RequestMethod.GET },
     ],
   });
 
   // Swagger Documentation Setup
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('CuriousBees API')
-    .setDescription('The CuriousBees Academic Collaboration Platform API')
+    .setTitle('SRM Curiousbees API')
+    .setDescription('The SRM Curiousbees Academic Collaboration Platform API')
     .setVersion('1.0.0')
     .addBearerAuth()
     .build();
@@ -126,7 +125,7 @@ async function createApp(expressInstance?: express.Express) {
     'http://127.0.0.1:3002',
     'http://localhost:3003',
     'http://127.0.0.1:3003',
-    'https://curiousbees.vercel.app',
+    'https://srm-curiousbees.vercel.app',
     ...configuredOrigins,
   ]));
 
@@ -151,7 +150,7 @@ async function createApp(expressInstance?: express.Express) {
 async function bootstrap() {
   const logger = new Logger('Bootstrap');
   logger.log('================================================================');
-  logger.log('🐝 Starting CuriousBees API bootstrap sequence...');
+  logger.log('🐝 Starting SRM Curiousbees API bootstrap sequence...');
   logger.log(`NODE_ENV=${process.env.NODE_ENV}`);
   logger.log(`PORT=${process.env.PORT}`);
   logger.log(`Frontend URL=${process.env.FRONTEND_URL}`);
@@ -172,12 +171,12 @@ let serverHandler: ((req: IncomingMessage, res: ServerResponse) => void) | null 
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
   if (!serverHandler) {
-    console.log('[CuriousBees] Cold start — initialising NestJS...');
+    console.log('[SRM Curiousbees] Cold start — initialising NestJS...');
     const expressApp = express();
     const nestApp = await createApp(expressApp);
     await nestApp.init(); // init WITHOUT listen
     serverHandler = expressApp;
-    console.log('[CuriousBees] NestJS ready.');
+    console.log('[SRM Curiousbees] NestJS ready.');
   }
   serverHandler(req, res);
 }

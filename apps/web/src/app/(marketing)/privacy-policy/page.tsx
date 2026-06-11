@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="prose prose-slate prose-lg max-w-none">
             <p className="lead text-xl text-slate-600 mb-8">
-              CuriousBees ("we," "our," or "the Platform") is committed to protecting the privacy and security of our users' personal and academic data. This Privacy Policy outlines how we collect, use, and safeguard information within the SRM Institute of Science and Technology research ecosystem.
+              SRM Curiousbees ("we," "our," or "the Platform") is committed to protecting the privacy and security of our users' personal and academic data. This Privacy Policy outlines how we collect, use, and safeguard information within the SRM Institute of Science and Technology research ecosystem.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-slate-900 mt-12 mb-4">1. Data Collection</h2>

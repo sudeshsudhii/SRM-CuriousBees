@@ -1,4 +1,4 @@
-# CuriousBees V2 — Demo Users Roster
+# SRM Curiousbees — Demo Users Roster
 
 This roster outlines the pre-seeded mock users created by `npm run db:seed`. When `AUTH_MODE=bypass` is enabled in `.env`, these users can be simulated directly on the frontend using the **Dev Override Switcher** (located in the bottom-right corner of the portal), or via the `/login` developer sandbox.
 
@@ -66,7 +66,7 @@ Supervisors oversee PhD scholars, grade and approve submitted progress logs, man
 
 Administrators manage users, review all system registrations, configure campus departments, and audit system reports.
 
-### 👤 CuriousBees Admin
+### 👤 SRM Curiousbees Admin
 * **Email**: `admin@srmist.edu.in`
 * **Access Level**: Full admin panel access.
 * **Views available**:

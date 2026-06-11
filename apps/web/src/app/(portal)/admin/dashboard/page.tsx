@@ -140,7 +140,7 @@ export default function AdminPage() {
             <span>Admin Control Panel</span>
           </h1>
           <p className="cb-page-subtitle">
-            Manage institutional user roles, audit security activity, and monitor the CuriousBees network.
+            Manage institutional user roles, audit security activity, and monitor the SRM Curiousbees network.
           </p>
         </div>
       </div>

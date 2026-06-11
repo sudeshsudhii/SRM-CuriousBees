@@ -4,7 +4,7 @@
  * DEV-ONLY: Static email → role mapping for local dashboard testing.
  */
 
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 // ─── Role Labels (human-readable) ────────────────────────────────────────────
 
@@ -25,7 +25,8 @@ export function getRoleForEmail(email: string): UserRole {
   const normalized = email.trim().toLowerCase();
   const username = normalized.split('@')[0];
 
-  if (normalized === 'r.matheshwaran.io@gmail.com') {
+  const superadminEmail = (process.env.NEXT_PUBLIC_SUPERADMIN_EMAIL || '').toLowerCase();
+  if (superadminEmail && normalized === superadminEmail) {
     return 'INSTITUTE_ADMIN';
   }
 

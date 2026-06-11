@@ -1,5 +1,5 @@
 {
-  "name": "@curiousbees/shared-utils",
+  "name": "@srm-curiousbees/shared-utils",
   "version": "1.0.0",
   "private": true,
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@curiousbees/types": "*",
+    "@srm-curiousbees/types": "*",
     "typescript": "^5.4.5"
   }
 }

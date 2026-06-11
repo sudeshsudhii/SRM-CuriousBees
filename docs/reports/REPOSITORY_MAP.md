@@ -1,6 +1,6 @@
-# CuriousBees V2 — Repository Map
+# SRM Curiousbees — Repository Map
 
-This document outlines the directory structure, architectural modules, active pages, API routes, database schemas, and shared dependencies of the **CuriousBees V2** monorepo.
+This document outlines the directory structure, architectural modules, active pages, API routes, database schemas, and shared dependencies of the **SRM Curiousbees** monorepo.
 
 ---
 
@@ -124,7 +124,7 @@ The backend is built on **NestJS 11** and connects to the PostgreSQL database vi
 
 ## 📦 5. Shared Workspaces & Packages
 
-* **`@curiousbees/types`**: Type declarations for models, inputs, and REST request/response structures.
-* **`@curiousbees/constants`**: Holds global identifiers (e.g. cookie name `cb-role` used in middleware checks).
-* **`@curiousbees/shared-utils`**: Centralizes Zod validation rules (`CreateThreadSchema`, `CreateCommentSchema`, `CreateOpportunitySchema`, `UpdateProfileSchema`) and the list of departments (`SRM_DEPARTMENTS`).
-* **`@curiousbees/ui`**: Hosts common components like `TagPill` and `StatusBadge`.
+* **`@srm-curiousbees/types`**: Type declarations for models, inputs, and REST request/response structures.
+* **`@srm-curiousbees/constants`**: Holds global identifiers (e.g. cookie name `cb-role` used in middleware checks).
+* **`@srm-curiousbees/shared-utils`**: Centralizes Zod validation rules (`CreateThreadSchema`, `CreateCommentSchema`, `CreateOpportunitySchema`, `UpdateProfileSchema`) and the list of departments (`SRM_DEPARTMENTS`).
+* **`@srm-curiousbees/ui`**: Hosts common components like `TagPill` and `StatusBadge`.

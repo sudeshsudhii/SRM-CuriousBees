@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { CreateOpportunitySchema, SRM_DEPARTMENTS } from '@curiousbees/shared-utils';
+import { CreateOpportunitySchema, SRM_DEPARTMENTS } from '@srm-curiousbees/shared-utils';
 import { useStore } from '@/store/useStore';
 import { 
   Briefcase, 
@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import GlassCard from '@/components/GlassCard';
-import { TagPill } from '@curiousbees/ui';
+import { TagPill } from '@srm-curiousbees/ui';
 import GlowButton from '@/components/GlowButton';
 import OpportunityCard from '@/components/OpportunityCard';
 

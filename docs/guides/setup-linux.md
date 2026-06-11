@@ -1,6 +1,6 @@
 # Linux Local Setup Guide
 
-Follow this guide to configure and run the CuriousBees V2 project on Linux (Ubuntu/Debian-based distributions).
+Follow this guide to configure and run the SRM Curiousbees project on Linux (Ubuntu/Debian-based distributions).
 
 ---
 
@@ -27,7 +27,7 @@ Ensure you have the following installed:
 Open your terminal and run:
 ```bash
 git clone <repository-url>
-cd CuriousBees_V2
+cd SRM_Curiousbees
 nvm install
 npm install
 ```

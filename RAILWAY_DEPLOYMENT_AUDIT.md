@@ -1,6 +1,6 @@
 # Railway Production Readiness Audit & Report
 
-This report summarizes the audit and hardening of the CuriousBees NestJS backend (`apps/api`) for production deployment on Railway.
+This report summarizes the audit and hardening of the SRM Curiousbees NestJS backend (`apps/api`) for production deployment on Railway.
 
 ## Deployment Status: **READY**
 

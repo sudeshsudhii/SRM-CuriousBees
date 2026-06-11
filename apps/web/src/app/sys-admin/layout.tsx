@@ -72,7 +72,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <ShieldCheck className="w-4 h-4 text-white" />
           </div>
           <div>
-            <p className="text-white font-bold text-sm tracking-tight leading-none">CuriousBees</p>
+            <p className="text-white font-bold text-sm tracking-tight leading-none">SRM Curiousbees</p>
             <p className="text-white/40 text-[10px] font-medium tracking-wider uppercase mt-0.5">Admin Panel</p>
           </div>
           <button

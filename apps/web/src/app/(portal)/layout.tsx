@@ -36,7 +36,7 @@ export default function PortalLayout({
   // Sync local storage theme on mount
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const savedTheme = (localStorage.getItem('curiousbees-theme') as 'dark' | 'light') || 'light';
+      const savedTheme = (localStorage.getItem('srm-curiousbees-theme') as 'dark' | 'light') || 'light';
       setTheme(savedTheme);
     }
   }, [setTheme]);

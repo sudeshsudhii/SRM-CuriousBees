@@ -138,7 +138,7 @@ export default function SignUpPage() {
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/25">
                 <ShieldCheck className="w-5 h-5 text-white" />
               </div>
-              <span className="text-white font-bold text-lg tracking-tight">CuriousBees</span>
+              <span className="text-white font-bold text-lg tracking-tight">SRM Curiousbees</span>
             </div>
             <p className="text-white/40 text-xs font-medium tracking-wider uppercase">Join the Research Portal</p>
           </motion.div>
@@ -436,7 +436,7 @@ export default function SignUpPage() {
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/25">
               <ShieldCheck className="w-5 h-5 text-white" />
             </div>
-            <span className="text-white font-bold text-lg tracking-tight">CuriousBees</span>
+            <span className="text-white font-bold text-lg tracking-tight">SRM Curiousbees</span>
           </div>
           <p className="text-white/40 text-xs font-medium tracking-wider uppercase">Join the Research Portal</p>
         </motion.div>
@@ -473,7 +473,7 @@ export default function SignUpPage() {
             {step === 'role_select' && (
               <motion.div key="role" initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 12 }}>
                 <div className="mb-8">
-                  <h1 className="text-xl font-bold text-white tracking-tight">Join CuriousBees</h1>
+                  <h1 className="text-xl font-bold text-white tracking-tight">Join SRM Curiousbees</h1>
                   <p className="text-white/40 text-sm mt-1">Select your role to begin registration</p>
                 </div>
                 <p className="text-xs text-white/40 font-semibold uppercase tracking-wider mb-4">I am a...</p>

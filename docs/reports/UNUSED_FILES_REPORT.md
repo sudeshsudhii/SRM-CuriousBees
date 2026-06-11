@@ -1,6 +1,6 @@
 # Unused Files Report
 
-This report catalogs all orphaned, temporary, or redundant files and empty folders detected across the **CuriousBees V2** monorepo that are safe to delete.
+This report catalogs all orphaned, temporary, or redundant files and empty folders detected across the **SRM Curiousbees** monorepo that are safe to delete.
 
 ---
 

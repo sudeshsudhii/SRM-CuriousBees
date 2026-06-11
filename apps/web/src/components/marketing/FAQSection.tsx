@@ -7,8 +7,8 @@ import { ChevronDown } from 'lucide-react';
 export default function FAQSection() {
   const faqs = [
     {
-      q: "Who can join the CuriousBees platform?",
-      a: "CuriousBees is currently exclusive to SRM Institute of Science and Technology. Active Research Scholars, PhD Candidates, Faculty Supervisors, and Institutional Administrators with a valid university email can access the platform."
+      q: "Who can join the SRM Curiousbees platform?",
+      a: "SRM Curiousbees is currently exclusive to SRM Institute of Science and Technology. Active Research Scholars, PhD Candidates, Faculty Supervisors, and Institutional Administrators with a valid university email can access the platform."
     },
     {
       q: "How does the role verification process work?",
@@ -16,7 +16,7 @@ export default function FAQSection() {
     },
     {
       q: "Is my research data secure?",
-      a: "Yes. CuriousBees employs enterprise-grade encryption and strict access controls. Research artifacts and database nodes are protected within the university's secure intranet framework, ensuring academic integrity and data privacy."
+      a: "Yes. SRM Curiousbees employs enterprise-grade encryption and strict access controls. Research artifacts and database nodes are protected within the university's secure intranet framework, ensuring academic integrity and data privacy."
     },
     {
       q: "Can I collaborate with researchers from other departments?",
@@ -38,7 +38,7 @@ export default function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-slate-500 text-lg">
-            Everything you need to know about the CuriousBees platform.
+            Everything you need to know about the SRM Curiousbees platform.
           </p>
         </div>
 

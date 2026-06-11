@@ -8,7 +8,7 @@
  * platform grows. No other file needs changing.
  */
 
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 // ─── Route Permission Matrix ──────────────────────────────────────────────────
 

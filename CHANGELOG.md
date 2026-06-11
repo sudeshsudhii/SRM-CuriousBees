@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the **CuriousBees V2** monorepo project will be documented in this file.
+All notable changes to the **SRM Curiousbees** monorepo project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -10,14 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.0] — 2026-06-05
 
 ### Added
-- **Cross-Platform Health CLI**: Added [scripts/check-health.js](file:///Users/maddy/Current%20Project/CuriousBees_V2/scripts/check-health.js) to query and format backend/database/Redis connections on Windows, macOS, and Linux.
+- **Cross-Platform Health CLI**: Added [scripts/check-health.js](file:///Users/maddy/Current%20Project/SRM_Curiousbees/scripts/check-health.js) to query and format backend/database/Redis connections on Windows, macOS, and Linux.
 - **GitHub Workflow Templates**: Added pull request template and issue template forms for bugs and feature requests under `.github/`.
-- **Troubleshooting Guide**: Created [docs/troubleshooting.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/docs/troubleshooting.md) for quick developer resolutions of port, Prisma, Redis, and Firebase conflicts.
-- **Development Mode Override Guide**: Created [docs/development_mode.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/docs/development_mode.md) detailing authentication bypass logic and role switches.
-- **Deployment and Test-Production Guide**: Created [docs/deployment_test_production.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/docs/deployment_test_production.md) outlining environment configurations and rollback plans.
+- **Troubleshooting Guide**: Created [docs/troubleshooting.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/docs/troubleshooting.md) for quick developer resolutions of port, Prisma, Redis, and Firebase conflicts.
+- **Development Mode Override Guide**: Created [docs/development_mode.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/docs/development_mode.md) detailing authentication bypass logic and role switches.
+- **Deployment and Test-Production Guide**: Created [docs/deployment_test_production.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/docs/deployment_test_production.md) outlining environment configurations and rollback plans.
 
 ### Changed
-- **Enforced Strict TypeScript**: Activated `"strict": true` and removed loose options on NestJS API in [apps/api/tsconfig.json](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/api/tsconfig.json), refactoring all type compiler warnings.
+- **Enforced Strict TypeScript**: Activated `"strict": true` and removed loose options on NestJS API in [apps/api/tsconfig.json](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/api/tsconfig.json), refactoring all type compiler warnings.
 - **Enhanced `/api/health` Endpoint**: Configured App Controller to return connection status checks for database and Redis services, alongside version tags.
 - **Standardized Monorepo scripts**: Harmonized root-level scripts (`dev:web`, `dev:api`, `build:web`, `build:api`, `lint`, `typecheck`, `health`, etc.) for seamless onboarding.
 - **Adjusted Lint Rules**: Added `.eslintrc.json` config in frontend Next.js workspace to ignore blocking non-interactive HTML/escape character warnings during CI/CD.
@@ -54,11 +54,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 🛠️ Release Workflow
 
-To publish a new version of CuriousBees V2, follow the release workflow:
+To publish a new version of SRM Curiousbees, follow the release workflow:
 
 1. **Feature/Bug Branching**: Develop changes in a feature branch (`feature/feature-name`) or bugfix branch (`bugfix/issue-name`).
 2. **Version Bump**: Bump version in package.json files:
-   - Root [package.json](file:///Users/maddy/Current%20Project/CuriousBees_V2/package.json)
+   - Root [package.json](file:///Users/maddy/Current%20Project/SRM_Curiousbees/package.json)
    - Workspace apps as appropriate
 3. **Run Checks**: Ensure all validations pass before merging:
    ```bash

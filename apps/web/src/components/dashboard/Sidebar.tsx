@@ -34,7 +34,7 @@ import {
 import { cn } from '@/lib/utils';
 import Logo from '../Logo';
 import { RoleBadge } from '../shared/role-badge';
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 // ─── Sidebar Dynamic Navigation Config ────────────────────────────────────────
 

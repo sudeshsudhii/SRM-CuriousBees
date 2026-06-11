@@ -1,6 +1,6 @@
 # Cross-Platform Compatibility Report
 
-This report documents the verification checks run across different operating systems (Windows, macOS, and Linux) to ensure the CuriousBees V2 monorepo setup commands and build orchestrators run without system-specific compilation errors.
+This report documents the verification checks run across different operating systems (Windows, macOS, and Linux) to ensure the SRM Curiousbees monorepo setup commands and build orchestrators run without system-specific compilation errors.
 
 ---
 

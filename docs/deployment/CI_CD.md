@@ -1,12 +1,12 @@
-# CuriousBees V2 — CI/CD Pipeline Documentation
+# SRM Curiousbees — CI/CD Pipeline Documentation
 
-This manual outlines the continuous integration and deployment standards configured for the CuriousBees V2 monorepo.
+This manual outlines the continuous integration and deployment standards configured for the SRM Curiousbees monorepo.
 
 ---
 
 ## 🚀 GitHub Actions CI Pipeline
 
-The pipeline is defined in [.github/workflows/pr-check.yml](file:///Users/maddy/Current%20Project/CuriousBees_V2/.github/workflows/pr-check.yml) and executes on:
+The pipeline is defined in [.github/workflows/pr-check.yml](file:///Users/maddy/Current%20Project/SRM_Curiousbees/.github/workflows/pr-check.yml) and executes on:
 - **Push events** to branches: `main`, `master`, `staging`, `dev`
 - **Pull Request events** targeting branches: `main`, `master`, `staging`, `dev`
 
@@ -37,12 +37,12 @@ graph TD
 
 ## 🛠️ Mock Environment Configurations for CI
 
-Because CuriousBees enforces environment variable integrity using Zod at compile-time/runtime, the GitHub Actions workspace injects the following dummy parameters during compilation:
+Because SRM Curiousbees enforces environment variable integrity using Zod at compile-time/runtime, the GitHub Actions workspace injects the following dummy parameters during compilation:
 
 - `NODE_ENV`: `production`
 - `DEVELOPMENT_MODE`: `"true"` (Bypasses Firebase key validation requirements)
-- `DATABASE_URL`: `postgresql://postgres:postgres@localhost:5432/srm_curiousbees_db?schema=public`
-- `DIRECT_URL`: `postgresql://postgres:postgres@localhost:5432/srm_curiousbees_db?schema=public`
+- `DATABASE_URL`: `postgresql://postgres:postgres@localhost:5432/srm_srm-curiousbees_db?schema=public`
+- `DIRECT_URL`: `postgresql://postgres:postgres@localhost:5432/srm_srm-curiousbees_db?schema=public`
 - `REDIS_HOST`: `localhost`
 - `REDIS_PORT`: `6379`
 - `FRONTEND_URL`: `http://localhost:3000`

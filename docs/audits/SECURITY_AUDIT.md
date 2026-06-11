@@ -1,6 +1,6 @@
-# CuriousBees V2 — Security Audit & Hardening Report
+# SRM Curiousbees — Security Audit & Hardening Report
 
-This report outlines the security measures, middlewares, rate-limiters, and sanitization layers implemented to secure CuriousBees V2.
+This report outlines the security measures, middlewares, rate-limiters, and sanitization layers implemented to secure SRM Curiousbees.
 
 ---
 
@@ -48,10 +48,10 @@ To guarantee input integrity and prevent script/SQL injection:
 
 ## 4. CORS Strategy & Cross-Origin Rules
 
-CuriousBees limits resource sharing to approved client domains:
+SRM Curiousbees limits resource sharing to approved client domains:
 * **Allowed Domains**:
   * `http://localhost:3000` (Local Development)
-  * `https://curiousbees.vercel.app` (Staging/Production UI)
+  * `https://srm-curiousbees.vercel.app` (Staging/Production UI)
   * Custom domains defined under `FRONTEND_URL` or comma-separated lists inside `ALLOWED_ORIGINS` environment variables.
 * **Bypass overrides**: In `DEVELOPMENT_MODE=true`, the API dynamically matches all `http://localhost:*` and `http://127.0.0.1:*` hosts to support fast developer workflows.
 

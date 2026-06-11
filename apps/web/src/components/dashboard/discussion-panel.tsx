@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { MessageSquare, MoreVertical, ArrowRight, MessageCircle, Clock } from 'lucide-react';
-import { Thread } from '@curiousbees/types';
+import { Thread } from '@srm-curiousbees/types';
 import { formatDistanceToNow } from 'date-fns';
 import { motion } from 'framer-motion';
 

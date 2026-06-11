@@ -1,6 +1,6 @@
-# CuriousBees V2 — Clerk Authentication Migration Plan
+# SRM Curiousbees — Clerk Authentication Migration Plan
 
-This document outlines the architectural plan to migrate the CuriousBees V2 monorepo's authentication provider from **Firebase Authentication** to **Clerk Authentication** while preserving all non-auth Firebase capabilities (Firebase Cloud Messaging/FCM and Push Notifications), the database, user records, and role-based access control (RBAC) logic.
+This document outlines the architectural plan to migrate the SRM Curiousbees monorepo's authentication provider from **Firebase Authentication** to **Clerk Authentication** while preserving all non-auth Firebase capabilities (Firebase Cloud Messaging/FCM and Push Notifications), the database, user records, and role-based access control (RBAC) logic.
 
 ---
 

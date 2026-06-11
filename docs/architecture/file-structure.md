@@ -1,7 +1,7 @@
 ```mermaid
 graph TD
     %% Root
-    Root[curiousbees-monorepo]
+    Root[srm-curiousbees-monorepo]
     
     %% Apps
     Apps[apps/]

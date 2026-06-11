@@ -1,6 +1,6 @@
 # Dependency Cleanup Report
 
-This report documents the cleanup, version standardization, and workspace checks conducted on dependencies across the CuriousBees V2 monorepo.
+This report documents the cleanup, version standardization, and workspace checks conducted on dependencies across the SRM Curiousbees monorepo.
 
 ---
 

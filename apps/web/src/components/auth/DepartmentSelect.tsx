@@ -3,7 +3,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { ChevronDown } from 'lucide-react';
-import { SRM_DEPARTMENTS } from '@curiousbees/shared-utils';
+import { SRM_DEPARTMENTS } from '@srm-curiousbees/shared-utils';
 
 interface DepartmentSelectProps {
   facultyValue: string;

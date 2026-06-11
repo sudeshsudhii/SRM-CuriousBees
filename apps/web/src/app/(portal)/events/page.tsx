@@ -7,7 +7,7 @@ import EventCalendar from '@/components/events/EventCalendar';
 import LiveEventFeed from '@/components/events/LiveEventFeed';
 import ReviewQueue from '@/components/events/ReviewQueue';
 import EventDetailModal from '@/components/events/EventDetailModal';
-import { Event } from '@curiousbees/types';
+import { Event } from '@srm-curiousbees/types';
 
 // Extend local type
 type PrismaEvent = Event & {

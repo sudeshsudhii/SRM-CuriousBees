@@ -1,12 +1,12 @@
-# CuriousBees V2 — Feature Alignment Report
+# SRM Curiousbees — Feature Alignment Report
 
-This report evaluates the monorepo against the core CuriousBees product vision, mapping active files to required features and identifying legacy remnants that do not align with current requirements.
+This report evaluates the monorepo against the core SRM Curiousbees product vision, mapping active files to required features and identifying legacy remnants that do not align with current requirements.
 
 ---
 
 ## 🗺️ 1. Active Feature Mapping
 
-The table below maps the directory nodes and source modules in CuriousBees V2 to the core product requirements:
+The table below maps the directory nodes and source modules in SRM Curiousbees to the core product requirements:
 
 | Required Feature | Frontend Route / Component | Backend REST Module | Status & Notes |
 | :--- | :--- | :--- | :--- |
@@ -29,10 +29,10 @@ The table below maps the directory nodes and source modules in CuriousBees V2 to
 
 ## 🚫 2. Legacy / Non-Aligned Files
 
-The following sections contain files representing deprecated features, legacy auth experiments, or retired integrations that are no longer part of the CuriousBees V2 architecture:
+The following sections contain files representing deprecated features, legacy auth experiments, or retired integrations that are no longer part of the SRM Curiousbees architecture:
 
 ### 2.1 NextAuth.js v5 Leftovers
-* **Remnants**: `Account`, `Session`, `VerificationToken` models in [schema.prisma](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/api/prisma/schema.prisma).
+* **Remnants**: `Account`, `Session`, `VerificationToken` models in [schema.prisma](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/api/prisma/schema.prisma).
 * **Alignment Analysis**: NextAuth.js has been completely replaced by Firebase Authentication. These tables are never written to or queried, but they are still generated in the database schema.
 
 ### 2.2 Deprecated AI / Ollama Integrations

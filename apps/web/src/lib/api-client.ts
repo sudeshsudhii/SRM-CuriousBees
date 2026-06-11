@@ -1,5 +1,5 @@
 /**
- * Centralized API Client for CuriousBees V2
+ * Centralized API Client for SRM Curiousbees
  *
  * All API requests MUST go through here. This module:
  *   1. Resolves the backend base URL from the env variable.

@@ -1,7 +1,7 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { CreateOpportunityInput } from '@curiousbees/types';
-import { CreateOpportunitySchema } from '@curiousbees/shared-utils';
+import { CreateOpportunityInput } from '@srm-curiousbees/types';
+import { CreateOpportunitySchema } from '@srm-curiousbees/shared-utils';
 
 @Injectable()
 export class OpportunitiesService {

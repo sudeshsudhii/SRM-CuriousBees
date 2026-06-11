@@ -125,7 +125,7 @@ export default function DashboardPage() {
             Welcome back, {currentUser?.name?.split(' ')[0] || 'Academic'}!
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 font-semibold max-w-xl leading-relaxed">
-            CuriousBees Intranet is online. Access your publications database, oversee active milestones, and discover synergy opportunities.
+            SRM Curiousbees Intranet is online. Access your publications database, oversee active milestones, and discover synergy opportunities.
           </p>
         </div>
         

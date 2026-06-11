@@ -3,16 +3,16 @@ import { ClerkProvider } from '@clerk/nextjs';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'CuriousBees — Elevating Academic Research & Collaboration',
-  description: 'CuriousBees is a premium university-grade research platform connecting scholars, supervisors, and institutions for seamless collaboration, academic tracking, and innovation.',
+  title: 'SRM Curiousbees — Elevating Academic Research & Collaboration',
+  description: 'SRM Curiousbees is a premium university-grade research platform connecting scholars, supervisors, and institutions for seamless collaboration, academic tracking, and innovation.',
   openGraph: {
-    title: 'CuriousBees — Elevating Academic Research',
+    title: 'SRM Curiousbees — Elevating Academic Research',
     description: 'A premium university-grade research platform connecting scholars, supervisors, and institutions.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CuriousBees — Academic Research Platform',
+    title: 'SRM Curiousbees — Academic Research Platform',
     description: 'A premium university-grade research platform connecting scholars, supervisors, and institutions.',
   }
 };
@@ -33,7 +33,7 @@ export default function RootLayout({
                   console.log('[CLERK TRACE] Document head script executing, process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY present:', !!'${process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}');
                   document.documentElement.classList.add('light');
                   document.documentElement.classList.remove('dark');
-                  localStorage.setItem('curiousbees-theme', 'light');
+                  localStorage.setItem('srm-curiousbees-theme', 'light');
                 } catch (e) {}
               })();
             `

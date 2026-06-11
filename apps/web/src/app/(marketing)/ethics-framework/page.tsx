@@ -17,7 +17,7 @@ export default function EthicsFrameworkPage() {
               Ethics Framework
             </h1>
             <p className="text-xl text-slate-500 leading-relaxed max-w-2xl mx-auto">
-              The foundation of impactful research is integrity. CuriousBees enforces a strict ethical framework aligned with global academic standards.
+              The foundation of impactful research is integrity. SRM Curiousbees enforces a strict ethical framework aligned with global academic standards.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function EthicsFrameworkPage() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Anti-Plagiarism</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Originality is the core of academic contribution. CuriousBees workflows integrate with institutional plagiarism detection tools. Submitting another researcher's work, ideas, or language without proper citation is a severe violation.
+                Originality is the core of academic contribution. SRM Curiousbees workflows integrate with institutional plagiarism detection tools. Submitting another researcher's work, ideas, or language without proper citation is a severe violation.
               </p>
             </div>
             

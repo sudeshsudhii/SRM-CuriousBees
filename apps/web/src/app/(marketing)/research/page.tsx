@@ -23,7 +23,7 @@ export default function ResearchPage() {
               Accelerate your academic journey.
             </h1>
             <p className="text-lg text-slate-500 leading-relaxed">
-              From ideation to peer-reviewed publication, CuriousBees provides the tools, network, and guidance you need to produce world-class research.
+              From ideation to peer-reviewed publication, SRM Curiousbees provides the tools, network, and guidance you need to produce world-class research.
             </p>
           </div>
           

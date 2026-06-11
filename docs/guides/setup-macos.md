@@ -1,6 +1,6 @@
 # macOS Local Setup Guide
 
-Follow this guide to configure and run the CuriousBees V2 project on macOS.
+Follow this guide to configure and run the SRM Curiousbees project on macOS.
 
 ---
 
@@ -20,7 +20,7 @@ Ensure you have the following installed:
 Open your terminal and run:
 ```bash
 git clone <repository-url>
-cd CuriousBees_V2
+cd SRM_Curiousbees
 nvm install
 npm install
 ```

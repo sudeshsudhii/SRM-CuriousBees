@@ -47,7 +47,7 @@ export default function MarketingFooter() {
         
         <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} CuriousBees. Designed for academic excellence.
+            © {new Date().getFullYear()} SRM Curiousbees. Designed for academic excellence.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-green-500" />

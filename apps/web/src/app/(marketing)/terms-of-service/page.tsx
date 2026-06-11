@@ -20,11 +20,11 @@ export default function TermsOfServicePage() {
 
           <div className="prose prose-slate prose-lg max-w-none">
             <p className="lead text-xl text-slate-600 mb-8">
-              Welcome to CuriousBees. By accessing or using our platform, you agree to comply with and be bound by the following terms and conditions. These terms govern your use of the platform within the context of SRM Institute of Science and Technology.
+              Welcome to SRM Curiousbees. By accessing or using our platform, you agree to comply with and be bound by the following terms and conditions. These terms govern your use of the platform within the context of SRM Institute of Science and Technology.
             </p>
 
             <h2 className="font-display text-2xl font-bold text-slate-900 mt-12 mb-4">1. Acceptance of Terms</h2>
-            <p>By logging into CuriousBees using your institutional credentials, you confirm that you are an authorized user (Scholar, Supervisor, or Administrator) and agree to abide by these terms and all applicable university policies.</p>
+            <p>By logging into SRM Curiousbees using your institutional credentials, you confirm that you are an authorized user (Scholar, Supervisor, or Administrator) and agree to abide by these terms and all applicable university policies.</p>
 
             <h2 className="font-display text-2xl font-bold text-slate-900 mt-12 mb-4">2. User Responsibilities & Academic Integrity</h2>
             <p>You are responsible for all activities occurring under your account. You agree to:</p>
@@ -43,7 +43,7 @@ export default function TermsOfServicePage() {
             </ul>
 
             <h2 className="font-display text-2xl font-bold text-slate-900 mt-12 mb-4">4. Intellectual Property</h2>
-            <p>All research artifacts uploaded to the platform remain the intellectual property of the respective authors and/or the university, in accordance with SRMIST intellectual property guidelines. CuriousBees claims no ownership over your research data.</p>
+            <p>All research artifacts uploaded to the platform remain the intellectual property of the respective authors and/or the university, in accordance with SRMIST intellectual property guidelines. SRM Curiousbees claims no ownership over your research data.</p>
 
             <h2 className="font-display text-2xl font-bold text-slate-900 mt-12 mb-4">5. Platform Modification & Termination</h2>
             <p>We reserve the right to modify, suspend, or discontinue any part of the platform at any time. Accounts found in violation of these terms or university policies may be suspended or terminated without prior notice.</p>

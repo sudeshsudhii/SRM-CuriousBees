@@ -1,4 +1,4 @@
-# CuriousBees V2 — Development Mode Stabilization Guide
+# SRM Curiousbees — Development Mode Stabilization Guide
 
 This guide outlines how the **Development Mode Bypass (`DEVELOPMENT_MODE=true`)** is structured, configured, and maintained across all monorepo systems. It allows developers to work on features, dashboards, and APIs offline without configuring Firebase SSO or database synchronization.
 

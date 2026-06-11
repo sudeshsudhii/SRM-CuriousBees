@@ -34,10 +34,10 @@ const nextConfig = {
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '',
   },
   transpilePackages: [
-    "@curiousbees/constants",
-    "@curiousbees/types",
-    "@curiousbees/shared-utils",
-    "@curiousbees/ui"
+    "@srm-curiousbees/constants",
+    "@srm-curiousbees/types",
+    "@srm-curiousbees/shared-utils",
+    "@srm-curiousbees/ui"
   ],
 };
 

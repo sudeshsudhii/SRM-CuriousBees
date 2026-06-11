@@ -2,7 +2,7 @@ import { Controller, Get, Post, Put, Body, Query, UseGuards, Req, Param, BadRequ
 import { ClerkAuthGuard } from '../auth/clerk.guard';
 import { ApprovedGuard } from '../auth/approved.guard';
 import { OpportunitiesService } from './opportunities.service';
-import { CreateOpportunityInput } from '@curiousbees/types';
+import { CreateOpportunityInput } from '@srm-curiousbees/types';
 
 @Controller('opportunities')
 @UseGuards(ClerkAuthGuard, ApprovedGuard)

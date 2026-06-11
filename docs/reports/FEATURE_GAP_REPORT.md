@@ -1,4 +1,4 @@
-# CuriousBees V2 — Feature Gap Analysis Report
+# SRM Curiousbees — Feature Gap Analysis Report
 
 This document maps all frontend pages and API modules, auditing what is fully functional, partially implemented, mocked, or missing.
 

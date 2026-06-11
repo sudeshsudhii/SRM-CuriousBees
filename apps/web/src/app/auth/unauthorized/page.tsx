@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { useStore } from '@/store/useStore';
 import { ROLE_LABELS } from '@/lib/auth/role-mapping';
 import { getDashboardRoute } from '@/lib/auth/route-protection';
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 export default function UnauthorizedPage() {
   const [theme, setTheme] = useState<'dark' | 'light'>('light');
@@ -17,7 +17,7 @@ export default function UnauthorizedPage() {
   // Sync theme on mount
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const savedTheme = (localStorage.getItem('curiousbees-theme') as 'dark' | 'light') || 'light';
+      const savedTheme = (localStorage.getItem('srm-curiousbees-theme') as 'dark' | 'light') || 'light';
       setTheme(savedTheme);
       const root = window.document.documentElement;
       if (savedTheme === 'dark') {
@@ -109,7 +109,7 @@ export default function UnauthorizedPage() {
         {/* Footer note */}
         <div className="mt-8 flex items-center justify-center space-x-1.5 text-[9px] text-slate-400 dark:text-slate-500 font-black uppercase tracking-wider">
           <ShieldAlert className="w-4 h-4 text-indigo-500" />
-          <span>CuriousBees RBAC Active</span>
+          <span>SRM Curiousbees RBAC Active</span>
         </div>
       </motion.div>
     </div>

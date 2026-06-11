@@ -1,7 +1,7 @@
 import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { CreateThreadInput } from '@curiousbees/types';
-import { CreateThreadSchema } from '@curiousbees/shared-utils';
+import { CreateThreadInput } from '@srm-curiousbees/types';
+import { CreateThreadSchema } from '@srm-curiousbees/shared-utils';
 
 @Injectable()
 export class ThreadsService {

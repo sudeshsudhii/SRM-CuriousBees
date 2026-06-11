@@ -1,6 +1,6 @@
-# CuriousBees V2 — Team Testing Deployment Guide
+# SRM Curiousbees — Team Testing Deployment Guide
 
-This guide describes how to deploy CuriousBees V2 to a free-tier hosting stack (Supabase, Railway, Vercel) so your team can open a URL and test all dashboards and modules immediately.
+This guide describes how to deploy SRM Curiousbees to a free-tier hosting stack (Supabase, Railway, Vercel) so your team can open a URL and test all dashboards and modules immediately.
 
 ---
 
@@ -66,7 +66,7 @@ graph LR
 
 Once deployed, sharing and testing with your team is extremely simple:
 
-1. **Open the App**: Provide the teammate with the Vercel URL (e.g., `https://curiousbees.vercel.app`).
+1. **Open the App**: Provide the teammate with the Vercel URL (e.g., `https://srm-curiousbees.vercel.app`).
 2. **Access Portal**: The app opens directly without requiring Google or Firebase logins due to `NEXT_PUBLIC_DEVELOPMENT_MODE=true`.
 3. **Switch Roles**: Use the **Dev Override Switcher** on the bottom-right corner of the page to switch roles dynamically (Research Scholar, Faculty Supervisor, or Institution Admin).
 4. **Test Features**: Walk through:

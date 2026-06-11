@@ -8,7 +8,7 @@
  * priority-ordered route based on the user's primary role.
  */
 
-import type { UserRole } from '@curiousbees/types';
+import type { UserRole } from '@srm-curiousbees/types';
 
 // ─── Dashboard Route Map ──────────────────────────────────────────────────────
 

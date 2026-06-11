@@ -1,2 +1,2 @@
-export { cn } from '@curiousbees/ui';
+export { cn } from '@srm-curiousbees/ui';
 

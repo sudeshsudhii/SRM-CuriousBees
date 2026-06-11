@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useStore } from '@/store/useStore';
-import { SRM_DEPARTMENTS } from '@curiousbees/shared-utils';
+import { SRM_DEPARTMENTS } from '@srm-curiousbees/shared-utils';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { UpdateProfileSchema } from '@curiousbees/shared-utils';
-import { UserRole } from '@curiousbees/types';
+import { UpdateProfileSchema } from '@srm-curiousbees/shared-utils';
+import { UserRole } from '@srm-curiousbees/types';
 import { 
   BookOpen, 
   MapPin, 

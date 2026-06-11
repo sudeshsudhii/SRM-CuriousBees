@@ -1,6 +1,6 @@
-# CuriousBees V2 — Updated GitIgnore Recommendation
+# SRM Curiousbees — Updated GitIgnore Recommendation
 
-This document presents an optimized `.gitignore` template for the CuriousBees V2 monorepo. It ensures that credentials, build caches, package locks of alternative managers, OS files, and developer IDE assets are prevented from being committed.
+This document presents an optimized `.gitignore` template for the SRM Curiousbees monorepo. It ensures that credentials, build caches, package locks of alternative managers, OS files, and developer IDE assets are prevented from being committed.
 
 ---
 
@@ -8,7 +8,7 @@ This document presents an optimized `.gitignore` template for the CuriousBees V2
 
 ```gitignore
 # ==========================================
-# CURIOUSBEES V2 — STANDARDIZED .GITIGNORE
+# Curiousbees — STANDARDIZED .GITIGNORE
 # ==========================================
 
 # 📦 1. Dependency Resolution Cache

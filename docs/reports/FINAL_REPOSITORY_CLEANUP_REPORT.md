@@ -1,6 +1,6 @@
 # Final Repository Cleanup Report
 
-This report summarizes the results of the Safe Pass Monorepo Cleanup and folder structure standardization conducted on the **CuriousBees V2** codebase.
+This report summarizes the results of the Safe Pass Monorepo Cleanup and folder structure standardization conducted on the **SRM Curiousbees** codebase.
 
 ---
 

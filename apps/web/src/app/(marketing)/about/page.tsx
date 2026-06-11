@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-20">
             <h1 className="font-display text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900">
-              About CuriousBees
+              About SRM Curiousbees
             </h1>
             <p className="text-xl text-slate-500 leading-relaxed max-w-2xl mx-auto">
               We are on a mission to dismantle academic silos and accelerate the pace of university research through intelligent, structured collaboration.
@@ -28,7 +28,7 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-slate-600 mb-12">
-              CuriousBees was founded to address a critical challenge in modern academia: the fragmentation of research. Despite sharing a campus, researchers in different departments often work in isolation, unaware of the potential synergies just a building away. Our mission is to provide the digital infrastructure necessary to connect these brilliant minds, fostering interdisciplinary breakthroughs and elevating the institutional research output of SRM Institute of Science and Technology.
+              SRM Curiousbees was founded to address a critical challenge in modern academia: the fragmentation of research. Despite sharing a campus, researchers in different departments often work in isolation, unaware of the potential synergies just a building away. Our mission is to provide the digital infrastructure necessary to connect these brilliant minds, fostering interdisciplinary breakthroughs and elevating the institutional research output of SRM Institute of Science and Technology.
             </p>
 
             <h2 className="font-display text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">

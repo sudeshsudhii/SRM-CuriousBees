@@ -1,6 +1,6 @@
 # Post-Cleanup Report
 
-This report catalogs all documentation files and empty directories pruned from the CuriousBees V2 monorepo to maintain a clean, standardized, enterprise-grade repository state.
+This report catalogs all documentation files and empty directories pruned from the SRM Curiousbees monorepo to maintain a clean, standardized, enterprise-grade repository state.
 
 ---
 

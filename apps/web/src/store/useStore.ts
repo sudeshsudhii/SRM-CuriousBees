@@ -1,8 +1,8 @@
 import { create } from 'zustand';
-import { User, Thread, Comment, Opportunity, UserRole, Event, CollaborationRequest, Workspace, WorkspaceFile, WorkspaceMilestone, WorkspaceAnnouncement, AuditLog, Publication, Report, Department, Notification } from '@curiousbees/types';
+import { User, Thread, Comment, Opportunity, UserRole, Event, CollaborationRequest, Workspace, WorkspaceFile, WorkspaceMilestone, WorkspaceAnnouncement, AuditLog, Publication, Report, Department, Notification } from '@srm-curiousbees/types';
 // Clerk is used for authentication
 import { getDashboardRoute } from '@/lib/auth/route-protection';
-import { ROLE_COOKIE_NAME } from '@curiousbees/constants';
+import { ROLE_COOKIE_NAME } from '@srm-curiousbees/constants';
 import { apiFetch, getAuthHeaders, readApiError, API_URL, resetAuthPromise } from '@/lib/api-client';
 
 const MOCK_INTERESTS = [
@@ -230,7 +230,7 @@ export const useStore = create<AppState>((set, get) => ({
         root.classList.add('light');
         root.classList.remove('dark');
       }
-      localStorage.setItem('curiousbees-theme', theme);
+      localStorage.setItem('srm-curiousbees-theme', theme);
     }
     set({ theme });
   },
@@ -309,7 +309,7 @@ export const useStore = create<AppState>((set, get) => ({
           const errorMessage = 'Backend auth sync returned HTTP 200 without a user payload.';
           console.error('[AuthStore] Error:', errorMessage);
           if (typeof window !== 'undefined') {
-            localStorage.removeItem('curiousbees-mock-token');
+            localStorage.removeItem('srm-curiousbees-mock-token');
           }
           deleteCookie(ROLE_COOKIE_NAME);
           set({ currentUser: null });
@@ -326,7 +326,7 @@ export const useStore = create<AppState>((set, get) => ({
         console.error('[AuthStore] Error:', errorMessage);
 
         if (typeof window !== 'undefined') {
-          localStorage.removeItem('curiousbees-mock-token');
+          localStorage.removeItem('srm-curiousbees-mock-token');
         }
         deleteCookie(ROLE_COOKIE_NAME);
         set({ currentUser: null });
@@ -336,7 +336,7 @@ export const useStore = create<AppState>((set, get) => ({
         return null;
       } catch (e: any) {
         if (typeof window !== 'undefined') {
-          localStorage.removeItem('curiousbees-mock-token');
+          localStorage.removeItem('srm-curiousbees-mock-token');
         }
         deleteCookie(ROLE_COOKIE_NAME);
         set({ currentUser: null });
@@ -574,7 +574,7 @@ export const useStore = create<AppState>((set, get) => ({
 
   logout: () => {
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('curiousbees-mock-token');
+      localStorage.removeItem('srm-curiousbees-mock-token');
       localStorage.removeItem('dev_role');
     }
     deleteCookie(ROLE_COOKIE_NAME);

@@ -10,7 +10,7 @@ export const winstonOptions: WinstonModuleOptions = {
         winston.format.ms(),
         process.env.NODE_ENV === 'production'
           ? winston.format.json()
-          : nestWinstonModuleUtilities.format.nestLike('CuriousBees', {
+          : nestWinstonModuleUtilities.format.nestLike('SRM Curiousbees', {
               colors: true,
               prettyPrint: true,
             }),

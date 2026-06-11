@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Thread } from '@curiousbees/types';
+import { Thread } from '@srm-curiousbees/types';
 import { MessageSquare, Calendar, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 

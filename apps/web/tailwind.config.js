@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        curiousbees: {
+        "srm-curiousbees": {
           blue: "#0C4DA2",
           gold: "#FFC828",
           crimson: "#800020",

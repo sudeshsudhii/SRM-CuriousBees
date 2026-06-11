@@ -267,7 +267,7 @@ export default function SpotlightSearch({ isOpen, onClose }: SpotlightSearchProp
                 <span>↑↓ navigate</span>
                 <span>⏎ select</span>
               </div>
-              <span className="font-semibold text-primary">CuriousBees Spotlight Search</span>
+              <span className="font-semibold text-primary">SRM Curiousbees Spotlight Search</span>
             </div>
           </motion.div>
         </div>

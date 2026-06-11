@@ -1,4 +1,4 @@
-# CuriousBees V2 — Dashboard Completion Report
+# SRM Curiousbees — Dashboard Completion Report
 
 This report documents the verification and completion state of the three target portals: **Research Scholar**, **Faculty Supervisor**, and **Institution Admin**.
 

@@ -186,13 +186,13 @@ async function main() {
       interests: ['Bioinformatics', 'Cancer Immunotherapy', 'Nanomaterials & Thin Films']
     },
     {
-      name: 'CuriousBees Admin',
+      name: 'SRM Curiousbees Admin',
       email: 'admin@srmist.edu.in',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
       role: Role.INSTITUTE_ADMIN,
       facultyName: 'Engineering & Technology',
       departmentName: 'CSE',
-      bio: 'SRMIST System Administrator for CuriousBees platform.',
+      bio: 'SRMIST System Administrator for SRM Curiousbees platform.',
       interests: []
     }
   ];
@@ -424,7 +424,7 @@ async function main() {
   await prisma.notification.create({
     data: {
       userId: suresh.id,
-      title: 'Welcome to CuriousBees',
+      title: 'Welcome to SRM Curiousbees',
       body: 'Your supervisor Dr. Anand Ramachandran has approved your portal access.',
       sentStatus: true
     }

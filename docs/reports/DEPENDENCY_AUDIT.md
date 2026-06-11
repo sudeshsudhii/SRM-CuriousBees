@@ -33,7 +33,7 @@ All application-specific dependencies (such as `@nestjs/*`, `firebase`, `next`, 
 ## 🔄 Shared Packages Verification
 
 All local packages under `packages/` maintain isolated dependency rosters matching their compilation targets:
-* `@curiousbees/types` -> Dev-only dependencies on `typescript`.
-* `@curiousbees/constants` -> Dev-only dependencies on `typescript`.
-* `@curiousbees/shared-utils` -> Dependencies on `zod`, dev-dependency on `@curiousbees/types`.
-* `@curiousbees/ui` -> Dependencies on `lucide-react`, `clsx`, `tailwind-merge` with peerDependencies on `react` and `react-dom`.
+* `@srm-curiousbees/types` -> Dev-only dependencies on `typescript`.
+* `@srm-curiousbees/constants` -> Dev-only dependencies on `typescript`.
+* `@srm-curiousbees/shared-utils` -> Dependencies on `zod`, dev-dependency on `@srm-curiousbees/types`.
+* `@srm-curiousbees/ui` -> Dependencies on `lucide-react`, `clsx`, `tailwind-merge` with peerDependencies on `react` and `react-dom`.

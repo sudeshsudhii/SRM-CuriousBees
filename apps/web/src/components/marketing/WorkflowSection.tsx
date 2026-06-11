@@ -14,7 +14,7 @@ export default function WorkflowSection() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">proposal to publication.</span>
           </h2>
           <p className="text-slate-500 text-lg">
-            CuriousBees orchestrates the entire research lifecycle, ensuring compliance and collaboration at every step.
+            SRM Curiousbees orchestrates the entire research lifecycle, ensuring compliance and collaboration at every step.
           </p>
         </div>
 

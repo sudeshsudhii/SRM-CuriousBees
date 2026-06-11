@@ -1,6 +1,6 @@
 # Repository Structure Report
 
-This report documents the reorganized enterprise-grade folder structure for the **CuriousBees V2** monorepo.
+This report documents the reorganized enterprise-grade folder structure for the **SRM Curiousbees** monorepo.
 
 ---
 

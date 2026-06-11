@@ -1,7 +1,7 @@
 import { Injectable, BadRequestException, ForbiddenException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { UpdateProfileInput } from '@curiousbees/types';
-import { UpdateProfileSchema } from '@curiousbees/shared-utils';
+import { UpdateProfileInput } from '@srm-curiousbees/types';
+import { UpdateProfileSchema } from '@srm-curiousbees/shared-utils';
 import { NotificationsService } from '../notifications/notifications.service';
 import { MailService } from './mail.service';
 import { Role, UserStatus } from '@prisma/client';

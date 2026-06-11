@@ -1,6 +1,6 @@
-# CuriousBees V2 — Phase 2 Monorepo Engineering Quality Audit Report
+# SRM Curiousbees — Phase 2 Monorepo Engineering Quality Audit Report
 
-This report presents a comprehensive audit of the **CuriousBees V2** monorepo workspace. It focuses on repository health, dependency integrity, cross-platform stability, developer onboarding, and production deployment readiness.
+This report presents a comprehensive audit of the **SRM Curiousbees** monorepo workspace. It focuses on repository health, dependency integrity, cross-platform stability, developer onboarding, and production deployment readiness.
 
 ---
 
@@ -10,21 +10,21 @@ This report presents a comprehensive audit of the **CuriousBees V2** monorepo wo
 * **Status**: **Excellent (Passed)**
 * **Audit Details**: 
   * Strict mode (`"strict": true`) has been enabled on the backend NestJS REST API (`apps/api/tsconfig.json`). 
-  * Implicit `any` errors, missing null/undefined safety assertions, and loose callbacks in startup files (e.g., [main.ts](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/api/src/main.ts) and [firebase-admin.service.ts](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/api/src/infrastructure/firebase/firebase-admin.service.ts)) have been resolved.
+  * Implicit `any` errors, missing null/undefined safety assertions, and loose callbacks in startup files (e.g., [main.ts](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/api/src/main.ts) and [firebase-admin.service.ts](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/api/src/infrastructure/firebase/firebase-admin.service.ts)) have been resolved.
   * Running `npm run typecheck` validates both frontend Next.js and backend NestJS compilation, exiting with code `0`.
 
 ### 1.2 Code Quality & Linting
 * **Status**: **Excellent (Passed)**
 * **Audit Details**:
   * Headless, non-interactive lints are fully functional. 
-  * Resolved blocking Next.js build issues on CI/CD (specifically `react/no-unescaped-entities` and `@next/next/no-html-link-for-pages`) by adding a custom [.eslintrc.json](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/web/.eslintrc.json) for the Next.js workspace.
+  * Resolved blocking Next.js build issues on CI/CD (specifically `react/no-unescaped-entities` and `@next/next/no-html-link-for-pages`) by adding a custom [.eslintrc.json](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/web/.eslintrc.json) for the Next.js workspace.
   * Running `npm run lint` completes cleanly with zero errors.
 
 ### 1.3 Service Connection Health
 * **Status**: **Healthy (Passed)**
 * **Audit Details**:
   * The `/api/health` endpoint evaluates the NestJS process, a PostgreSQL ping via Prisma, and a Redis ping via `ioredis`.
-  * The custom CLI tool [scripts/check-health.js](file:///Users/maddy/Current%20Project/CuriousBees_V2/scripts/check-health.js) executes on all major operating systems, returning live connection status:
+  * The custom CLI tool [scripts/check-health.js](file:///Users/maddy/Current%20Project/SRM_Curiousbees/scripts/check-health.js) executes on all major operating systems, returning live connection status:
     * API Gateway: `ONLINE`
     * PostgreSQL DB: `CONNECTED`
     * Redis Queue: `CONNECTED`
@@ -37,17 +37,17 @@ Prior to Phase 2, several operational areas lacked formalized documentation. We 
 
 | Identified Documentation Gap | Resolution Artifact / Document | Purpose & Contents |
 | :--- | :--- | :--- |
-| **Troubleshooting Guide** | [docs/troubleshooting.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/docs/troubleshooting.md) | Resolving port conflicts (`EADDRINUSE`), Prisma out-of-sync schemas, BullMQ Redis loops, and Firebase Admin environment key parsing errors. |
-| **Dev Mode Bypass Guide** | [docs/development_mode.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/docs/development_mode.md) | Standardizes the bypass flags (`DEVELOPMENT_MODE`), describes the mock local developer user structure, and maps how client-header tokens are passed. |
-| **Staging/Prod Deployment** | [docs/deployment_test_production.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/docs/deployment_test_production.md) | Setup procedures, environment variables matrix for frontend/backend, Prisma DDL command guidelines, and disaster rollback plans. |
-| **Release Changelog** | [CHANGELOG.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/CHANGELOG.md) | Chronological version history (`v0.1.0` through `v0.3.0`) following Keep a Changelog rules and Semantic Versioning. |
+| **Troubleshooting Guide** | [docs/troubleshooting.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/docs/troubleshooting.md) | Resolving port conflicts (`EADDRINUSE`), Prisma out-of-sync schemas, BullMQ Redis loops, and Firebase Admin environment key parsing errors. |
+| **Dev Mode Bypass Guide** | [docs/development_mode.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/docs/development_mode.md) | Standardizes the bypass flags (`DEVELOPMENT_MODE`), describes the mock local developer user structure, and maps how client-header tokens are passed. |
+| **Staging/Prod Deployment** | [docs/deployment_test_production.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/docs/deployment_test_production.md) | Setup procedures, environment variables matrix for frontend/backend, Prisma DDL command guidelines, and disaster rollback plans. |
+| **Release Changelog** | [CHANGELOG.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/CHANGELOG.md) | Chronological version history (`v0.1.0` through `v0.3.0`) following Keep a Changelog rules and Semantic Versioning. |
 
 ---
 
 ## 📦 3. Dependency Audit
 
 ### 3.1 Workspace Scoping
-* Monorepo uses **npm workspaces** mapped in the root [package.json](file:///Users/maddy/Current%20Project/CuriousBees_V2/package.json):
+* Monorepo uses **npm workspaces** mapped in the root [package.json](file:///Users/maddy/Current%20Project/SRM_Curiousbees/package.json):
   * App: `apps/web`, `apps/api`
   * Packages: `packages/types`, `packages/shared-utils`, `packages/constants`, `packages/ui`
 * Sharing between modules is done using standard npm symbolic link definitions (local dependencies prefixed with `*` or direct package names in workspace files).
@@ -83,12 +83,12 @@ All internal imports use exact, lowercase-to-uppercase matching (e.g., standardi
 We established Git standards and PR formats to ease development across multiple contributors:
 
 ### 5.1 Issue & PR Templates
-* Created **[PULL_REQUEST_TEMPLATE.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/.github/PULL_REQUEST_TEMPLATE.md)**: Includes checklists for database migrations, testing runs, and manual approval triggers.
-* Created **[bug_report.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/.github/ISSUE_TEMPLATE/bug_report.md)**: Structures bugs with system metadata (Node version, OS version, DB status) and step-by-step reproduction guidelines.
-* Created **[feature_request.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/.github/ISSUE_TEMPLATE/feature_request.md)**: Aligns features with user problem statements and proposed implementation blueprints.
+* Created **[PULL_REQUEST_TEMPLATE.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/.github/PULL_REQUEST_TEMPLATE.md)**: Includes checklists for database migrations, testing runs, and manual approval triggers.
+* Created **[bug_report.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/.github/ISSUE_TEMPLATE/bug_report.md)**: Structures bugs with system metadata (Node version, OS version, DB status) and step-by-step reproduction guidelines.
+* Created **[feature_request.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/.github/ISSUE_TEMPLATE/feature_request.md)**: Aligns features with user problem statements and proposed implementation blueprints.
 
 ### 5.2 Release & Versioning Strategies
-* Releases are tracked inside [CHANGELOG.md](file:///Users/maddy/Current%20Project/CuriousBees_V2/CHANGELOG.md).
+* Releases are tracked inside [CHANGELOG.md](file:///Users/maddy/Current%20Project/SRM_Curiousbees/CHANGELOG.md).
 * Team commits must comply with the Conventional Commits specifications (`feat:`, `fix:`, `docs:`, `chore:`) to automate version bump logs.
 
 ---

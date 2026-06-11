@@ -159,7 +159,7 @@ export default function AdminsTab() {
               ) : filtered.length === 0 ? (
                 <tr><td colSpan={5} className="px-4 py-12 text-center text-slate-500">No admins found.</td></tr>
               ) : filtered.map(item => {
-                const isSuperadmin = item.email.toLowerCase() === 'r.matheshwaran.io@gmail.com';
+                const isSuperadmin = (process.env.NEXT_PUBLIC_SUPERADMIN_EMAIL || '') && item.email.toLowerCase() === (process.env.NEXT_PUBLIC_SUPERADMIN_EMAIL || '').toLowerCase();
                 return (
                   <tr key={item.id} className="hover:bg-slate-50/50 transition-colors">
                     <td className="px-4 py-3">

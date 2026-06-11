@@ -1,6 +1,6 @@
-# CuriousBees V2 — Onboarding Quick Start Guide
+# SRM Curiousbees — Onboarding Quick Start Guide
 
-Welcome to the CuriousBees development team! This guide will help you set up and run the monorepo locally in less than 5 minutes.
+Welcome to the SRM Curiousbees development team! This guide will help you set up and run the monorepo locally in less than 5 minutes.
 
 ---
 
@@ -9,7 +9,7 @@ Welcome to the CuriousBees development team! This guide will help you set up and
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd CuriousBees_V2
+cd SRM_Curiousbees
 ```
 
 ### 2. Configure Environment Variables

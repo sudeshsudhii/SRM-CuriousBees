@@ -86,7 +86,7 @@ export default function Logo({
       {showText && (
         <div className="flex flex-col text-left">
           <span className="font-display-lg text-headline-md font-bold text-primary">
-            CuriousBees
+            SRM Curiousbees
           </span>
           <span className="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider">
             SRMIST Research

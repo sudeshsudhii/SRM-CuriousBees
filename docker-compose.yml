@@ -1,27 +1,27 @@
-version: '3.8'
+
 
 services:
   postgres:
     image: postgres:15-alpine
-    container_name: srm_curiousbees_postgres
+    container_name: srm_srm-curiousbees_postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: srm_curiousbees_db
+      POSTGRES_DB: srm_srm-curiousbees_db
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d srm_curiousbees_db"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d srm_srm-curiousbees_db"]
       interval: 5s
       timeout: 5s
       retries: 5
 
   redis:
     image: redis:7-alpine
-    container_name: srm_curiousbees_redis
+    container_name: srm_srm-curiousbees_redis
     restart: always
     ports:
       - "6379:6379"
@@ -35,13 +35,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.api
-    container_name: srm_curiousbees_api
+    container_name: srm_srm-curiousbees_api
     restart: always
     environment:
       NODE_ENV: production
       PORT: 4000
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/srm_curiousbees_db?schema=public
-      DIRECT_URL: postgresql://postgres:postgres@postgres:5432/srm_curiousbees_db?schema=public
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/srm_srm-curiousbees_db?schema=public
+      DIRECT_URL: postgresql://postgres:postgres@postgres:5432/srm_srm-curiousbees_db?schema=public
       REDIS_HOST: redis
       REDIS_PORT: 6379
       DEVELOPMENT_MODE: "true"
@@ -61,7 +61,7 @@ services:
       args:
         NEXT_PUBLIC_API_URL: http://localhost:4000
         NEXT_PUBLIC_DEVELOPMENT_MODE: "true"
-    container_name: srm_curiousbees_web
+    container_name: srm_srm-curiousbees_web
     restart: always
     environment:
       NODE_ENV: production

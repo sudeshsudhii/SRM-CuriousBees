@@ -6,7 +6,7 @@ import { apiFetch } from '@/lib/api-client';
 import { motion } from 'framer-motion';
 import { formatDistanceToNow } from 'date-fns';
 import { Bot, CheckCircle, Zap } from 'lucide-react';
-import { Event } from '@curiousbees/types';
+import { Event } from '@srm-curiousbees/types';
 
 type PrismaEvent = Event & {
   status: 'DRAFT' | 'PUBLISHED' | 'REVIEW_REQUIRED' | 'FAILED';

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useStore } from '@/store/useStore';
-import { SRM_DEPARTMENTS } from '@curiousbees/shared-utils';
+import { SRM_DEPARTMENTS } from '@srm-curiousbees/shared-utils';
 import { 
   Users, 
   Search, 
@@ -105,7 +105,7 @@ export default function ResearchersDiscoveryPage() {
         <div>
           <span className="text-[11px] font-bold text-primary uppercase tracking-widest flex items-center gap-1.5">
             <Compass className="w-4 h-4 text-primary" />
-            <span>CuriousBees Academic Network</span>
+            <span>SRM Curiousbees Academic Network</span>
           </span>
           <h2 className="font-display-lg text-headline-xl sm:text-[32px] font-bold text-on-surface mt-1.5 tracking-tight leading-tight">
             Expert Collaborators Directory

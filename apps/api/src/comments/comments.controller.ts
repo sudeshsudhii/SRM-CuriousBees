@@ -2,7 +2,7 @@ import { Controller, Post, Body, UseGuards, Req } from '@nestjs/common';
 import { ClerkAuthGuard } from '../auth/clerk.guard';
 import { ApprovedGuard } from '../auth/approved.guard';
 import { CommentsService } from './comments.service';
-import { CreateCommentInput } from '@curiousbees/types';
+import { CreateCommentInput } from '@srm-curiousbees/types';
 
 @Controller('comments')
 @UseGuards(ClerkAuthGuard, ApprovedGuard)

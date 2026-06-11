@@ -1,6 +1,6 @@
-# CuriousBees V2 — Health Checks & Diagnostics Specification
+# SRM Curiousbees — Health Checks & Diagnostics Specification
 
-This document details the production-ready application health endpoints, telemetry diagnostics, and system version APIs implemented inside the CuriousBees V2 API service.
+This document details the production-ready application health endpoints, telemetry diagnostics, and system version APIs implemented inside the SRM Curiousbees API service.
 
 ---
 
@@ -106,4 +106,4 @@ You can query this information locally or via scripting using the cross-platform
 npm run health
 ```
 
-This runs the script [scripts/check-health.js](file:///Users/maddy/Current%20Project/CuriousBees_V2/scripts/check-health.js), checking that status codes return `200` and formats a beautiful console telemetry output.
+This runs the script [scripts/check-health.js](file:///Users/maddy/Current%20Project/SRM_Curiousbees/scripts/check-health.js), checking that status codes return `200` and formats a beautiful console telemetry output.

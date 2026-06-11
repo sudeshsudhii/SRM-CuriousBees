@@ -1,6 +1,6 @@
-# CuriousBees V2 — Production Release Checklist
+# SRM Curiousbees — Production Release Checklist
 
-This checklist details the steps required to transition the CuriousBees V2 monorepo from the **Developer Bypass Sandbox** (`AUTH_MODE=bypass`) to a fully secured **Production Deployment** (`AUTH_MODE=firebase`) utilizing Google Single Sign-On.
+This checklist details the steps required to transition the SRM Curiousbees monorepo from the **Developer Bypass Sandbox** (`AUTH_MODE=bypass`) to a fully secured **Production Deployment** (`AUTH_MODE=firebase`) utilizing Google Single Sign-On.
 
 ---
 

@@ -1,6 +1,6 @@
-# CuriousBees V2 — Development Mode Bypass Documentation
+# SRM Curiousbees — Development Mode Bypass Documentation
 
-This document explains the **Development Mode Bypass** mechanism (`DEVELOPMENT_MODE=true` / `NEXT_PUBLIC_DEVELOPMENT_MODE=true`) built into CuriousBees V2. This mode allows developers to build, test, and audit the application locally without requiring external services like Firebase Authentication or cloud-based database syncs.
+This document explains the **Development Mode Bypass** mechanism (`DEVELOPMENT_MODE=true` / `NEXT_PUBLIC_DEVELOPMENT_MODE=true`) built into SRM Curiousbees. This mode allows developers to build, test, and audit the application locally without requiring external services like Firebase Authentication or cloud-based database syncs.
 
 ---
 
@@ -21,13 +21,13 @@ To solve this, enabling development mode completely overrides:
 To activate Development Mode, modify or create the respective environment configuration files in your local workspace:
 
 ### 1. NestJS API Backend Configuration
-In [apps/api/.env](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/api/.env):
+In [apps/api/.env](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/api/.env):
 ```env
 DEVELOPMENT_MODE=true
 ```
 
 ### 2. Next.js Frontend Configuration
-In [apps/web/.env.local](file:///Users/maddy/Current%20Project/CuriousBees_V2/apps/web/.env.local):
+In [apps/web/.env.local](file:///Users/maddy/Current%20Project/SRM_Curiousbees/apps/web/.env.local):
 ```env
 NEXT_PUBLIC_DEVELOPMENT_MODE=true
 ```

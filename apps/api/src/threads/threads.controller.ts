@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Query, Param, UseGuards, Req } from '@nest
 import { ClerkAuthGuard } from '../auth/clerk.guard';
 import { ApprovedGuard } from '../auth/approved.guard';
 import { ThreadsService } from './threads.service';
-import { CreateThreadInput } from '@curiousbees/types';
+import { CreateThreadInput } from '@srm-curiousbees/types';
 
 @Controller('threads')
 @UseGuards(ClerkAuthGuard, ApprovedGuard)

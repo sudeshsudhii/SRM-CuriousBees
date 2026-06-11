@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-console.log('🏁 Starting CuriousBees database setup...');
+console.log('🏁 Starting SRM Curiousbees database setup...');
 
 // Resolve monorepo root directory
 const rootDir = path.resolve(__dirname, '..');

@@ -39,7 +39,7 @@ export default function AccountRejectedPage() {
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/25">
               <ShieldCheck className="w-5 h-5 text-white" />
             </div>
-            <span className="text-white font-bold text-lg tracking-tight">CuriousBees</span>
+            <span className="text-white font-bold text-lg tracking-tight">SRM Curiousbees</span>
           </div>
         </motion.div>
 
@@ -119,7 +119,7 @@ export default function AccountRejectedPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              href="mailto:research.admin@srmist.edu.in?subject=CuriousBees%20Registration%20Appeal"
+              href="mailto:research.admin@srmist.edu.in?subject=SRM Curiousbees%20Registration%20Appeal"
               className="w-full py-3 rounded-xl border border-white/10 hover:bg-white/[0.04] text-white/60 hover:text-white/80 text-sm font-medium flex items-center justify-center gap-2 transition-all cursor-pointer"
             >
               <Mail className="w-4 h-4" />

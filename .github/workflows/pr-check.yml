@@ -1,4 +1,4 @@
-name: CuriousBees V2 CI Pipeline
+name: SRM Curiousbees CI Pipeline
 
 on:
   push:
@@ -44,8 +44,8 @@ jobs:
           NODE_ENV: production
           DEVELOPMENT_MODE: "true"
           PORT: 4000
-          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/srm_curiousbees_db?schema=public
-          DIRECT_URL: postgresql://postgres:postgres@localhost:5432/srm_curiousbees_db?schema=public
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/srm_srm-curiousbees_db?schema=public
+          DIRECT_URL: postgresql://postgres:postgres@localhost:5432/srm_srm-curiousbees_db?schema=public
           REDIS_HOST: localhost
           REDIS_PORT: 6379
           FRONTEND_URL: http://localhost:3000

@@ -1,6 +1,6 @@
 const http = require('http');
 
-console.log('🔍 Querying CuriousBees system health check...');
+console.log('🔍 Querying SRM Curiousbees system health check...');
 
 const options = {
   hostname: 'localhost',
@@ -22,7 +22,7 @@ const req = http.request(options, (res) => {
       try {
         const health = JSON.parse(data);
         console.log('\n=============================================');
-        console.log(` CuriousBees Health Check: ${health.status.toUpperCase()}`);
+        console.log(` SRM Curiousbees Health Check: ${health.status.toUpperCase()}`);
         console.log('=============================================');
         console.log(`📡 API Status:       ${health.api ? '✅ ONLINE' : '❌ OFFLINE'}`);
         console.log(`🗄️ Database Status:  ${health.database ? '✅ CONNECTED' : '❌ DISCONNECTED'}`);

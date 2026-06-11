@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Clock, Check, X, Eye, FileText } from 'lucide-react';
-import { User as UserType, CollaborationRequest } from '@curiousbees/types';
+import { User as UserType, CollaborationRequest } from '@srm-curiousbees/types';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface ApprovalQueueProps {

@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-console.log('🏁 Starting CuriousBees V2 Complete Setup...\n');
+console.log('🏁 Starting SRM Curiousbees Complete Setup...\n');
 
 const rootDir = path.resolve(__dirname, '..');
 const envPath = path.join(rootDir, '.env');
