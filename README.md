@@ -2,8 +2,6 @@
 
 # SRM CuriousBees
 
-<img src="./docs/assets/hero-banner-v2.png" alt="SRM CuriousBees Hero Banner" width="100%" />
-
 ### Research Collaboration & Supervisor-Scholar Management Platform
 
 > *Accelerating academic discovery through centralized research collaboration, opportunity management, and intelligent supervisor-scholar workflows.*
